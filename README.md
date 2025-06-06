@@ -38,3 +38,30 @@ Deployment and Community:
 Deploy the simulation on a scalable cloud platform, accessible to users worldwide.
 Create a vibrant community of users to share insights, collaborate on projects, and contribute to the development of the simulation.
 Provide ongoing support and updates to the simulation.
+
+## Local Development
+
+### Backend
+1. Install Python 3.10+ and `pip`.
+2. Install dependencies:
+   ```bash
+   pip install fastapi uvicorn pydantic
+   ```
+3. Start the API server:
+   ```bash
+   uvicorn backend.main:app --reload
+   ```
+
+### Frontend
+1. Install Node.js 16 or later.
+2. Install packages:
+   ```bash
+   cd frontend && npm install
+   ```
+3. Launch the minimal UI:
+   ```bash
+   npm start
+   ```
+
+### Configuration
+Update `backend/config.py` with your own API keys and database information.
